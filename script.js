@@ -9,14 +9,14 @@ const events = [
     title: "Stand permanente",
     venue: "Recepción",
     type: "general",
-    description: "Bienvenida, ingreso y orientación general."
+    description: "Bienvenida, ingreso y orientación general. Stand de Aguas AMESE y Espiritu floral"
   },
   {
     time: "13:00",
     title: "Cierre del evento",
     venue: "Recepción",
     type: "general",
-    description: "Agradecimientos y despedida formal."
+    description: "Agradecimientos y despedida formal. Stand de Aguas AMESE y Espiritu floral"
   },
 
   // Salón 1 – Talleres de baile (según tabla)
@@ -214,7 +214,7 @@ const events = [
   // Cafetería
   {
     time: "09:00",
-    title: "Cata de Café y Snacks",
+    title: "Stand de Café Ferma",
     venue: "Cafetería",
     type: "general"
   },
@@ -223,33 +223,10 @@ const events = [
   {
     time: "09:00",
     title: "Stand permanente",
-    venue: "Salón 7 · Corazón Peludito",
+    venue: "Salón 6 · Fundación Gatitus",
     type: "fundaciones"
   },
 
-  // Juegos de mesa
-  {
-    time: "09:00",
-    title: "Stand permanente",
-    venue: "Salón 8 · Juegos de mesa",
-    type: "juegos"
-  },
-
-  // Música
-  {
-    time: "09:00",
-    title: "Stand permanente",
-    venue: "Salón 9 · Talleres de música",
-    type: "música"
-  },
-
-  // AMESE (FUNDACIONES)
-  {
-    time: "09:00",
-    title: "Stand permanente",
-    venue: "Salón 10 · AMESE",
-    type: "fundaciones"
-  }
 ];
 
 /* ============================================================
@@ -389,58 +366,26 @@ const salones = [
 
   {
     id: "cafeteria",
-    name: "Cafetería · Cata de Café y Snacks",
+    name: "Cafetería · Stand de Café Ferma",
     type: "General",
     icon: "☕",
     capacity: "6",
-    staff: "Equipo Cata de Café",
+    staff: "Equipo Ferma",
     description: "Zona de descanso con bebidas y snacks.",
     schedule: [{ time: "09:00", title: "Apertura de cafetería" }]
   },
 
   {
     id: "salon7",
-    name: "Salón 7 · Corazón Peludito",
+    name: "Salón 6 · Fundación Gatitus",
     type: "Fundaciones",
     icon: "🐾",
     capacity: "6",
-    staff: "Corazón Peludito",
+    staff: "Fundación Gatitus",
     description: "Adopciones, bienestar animal y más.",
     schedule: [{ time: "09:00", title: "Stand permanente" }]
   },
 
-  {
-    id: "salon8",
-    name: "Salón 8 · Juegos de mesa",
-    type: "Juegos",
-    icon: "🎲",
-    capacity: "16",
-    staff: "Son Geniales",
-    description: "Zona de juegos guiados para toda la familia.",
-    schedule: [{ time: "09:00", title: "Stand permanente" }]
-  },
-
-  {
-    id: "salon9",
-    name: "Salón 9 · Talleres de música",
-    type: "Música",
-    icon: "🎶",
-    capacity: "8",
-    staff: "Laura Sánchez, Natalia Alarcón",
-    description: "Exploración instrumental y práctica musical.",
-    schedule: [{ time: "09:00", title: "Stand permanente" }]
-  },
-
-  {
-    id: "salon10",
-    name: "Salón 10 · AMESE",
-    type: "Fundaciones",
-    icon: "🤝",
-    capacity: "6",
-    staff: "AMESE",
-    description: "Charlas y sensibilización.",
-    schedule: [{ time: "09:00", title: "Stand permanente" }]
-  }
 ];
 
 /* ============================================================
