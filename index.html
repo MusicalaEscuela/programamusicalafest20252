@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Musicala Fest 2025 – Programa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <img src="logo.png" alt="Logo de la Escuela de artes Musicala" class="logo">
+        <div class="brand-text">
+          <h1>Musicala Fest 2025</h1>
+          <p class="subtitle">Programa · Talleres · Muestras · Experiencias</p>
+        </div>
+      </div>
+
+      <div class="event-info">
+        <p><span class="tag">Festival</span></p>
+        <p><strong>Fecha:</strong> 14 de diciembre</p>
+        <p><strong>Horario:</strong> 9:00 a.m. – 1:00 p.m.</p>
+        <p><strong>Lugar:</strong> Sede Musicala · Carrera 45A #103B-34, Bogotá</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- =========================
+         HERO / INTRO
+    ========================== -->
+    <section class="hero" aria-labelledby="hero-title">
+
+      <!-- PRIMERO: IMAGEN -->
+      <figure class="hero-poster">
+        <img src="musicala fest 2025.png"
+             alt="Afiche de Musicala Fest 2025 con lobo y notas musicales"
+             class="poster-img">
+        <figcaption>Arte oficial de Musicala Fest 2025</figcaption>
+      </figure>
+
+      <!-- DESPUÉS: TEXTO -->
+      <div class="hero-text">
+        <h2 id="hero-title">Todo lo que pasa en el Musicala Fest</h2>
+
+        <p>
+          🎉 <strong>¡Revisa la agenda, explora los salones y prepárate para vivir el Musicala Fest al máximo!</strong> 🎨🎶💃  
+          Este evento está diseñado para que disfrutes con toda tu familia de un recorrido lleno de arte, diversión y experiencias inolvidables. Tendremos:
+          <br><br>
+          ✨ <strong>Talleres de música, danza y artes plásticas para toda la familia</strong>, donde grandes y pequeños podrán crear, expresarse y moverse al ritmo del corazón.  
+          <br><br>
+          🍇 <strong>Cata de café</strong> guiada por una de nuestras docentes, para los amantes del buen aroma y sabor.  
+          <br><br>
+          🎭 <strong>Presentaciones artísticas</strong> de nuestros estudiantes y docentes en música, danza y artes plásticas que mostrarán todo el talento y creatividad que florece en Musicala.  
+          <br><br>
+          🎤 <strong>Espacios para conversar con tus profes</strong>, conocer más sobre tus procesos, resolver dudas y descubrir qué te espera en tu camino artístico. ¡Queremos acompañarte paso a paso!  
+          <br><br>
+          💚 <strong>Zona de fundaciones:</strong> En Musicala siempre apoyamos tres causas que nos inspiran profundamente: 🌱 el <strong>medio ambiente</strong>, 👥 la <strong>comunidad</strong> (poblaciones vulnerables) y 🐾 la <strong>naturaleza y los animalitos</strong>.  
+          Estas fundaciones estarán presentes con stands para contarnos sobre su labor, visibilizar su impacto y abrir la posibilidad para que quienes lo deseen puedan apoyarlas también, ya sea con donaciones, comprando sus productos o adquiriendo cositas que han creado con mucho amor.<strong>B</strong>. 💖  
+          <br><br>
+          🃏 <strong>Zona de juegos de mesa</strong>, donde estrenaremos con mucha emoción nuestro propio <strong>juego de cartas Musicala</strong>. ¡Diversión garantizada!
+        </p>
+
+        <div class="hero-actions">
+          <button
+            class="btn primary"
+            id="btn-ver-agenda"
+            aria-label="Ver agenda general del Musicala Fest"
+          >
+            Ver agenda general
+          </button>
+          <button
+            class="btn ghost"
+            id="btn-ver-salones"
+            aria-label="Explorar salones y experiencias del Musicala Fest"
+          >
+            Explorar por salones
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- =======================================
+         AGENDA GENERAL
+    ======================================== -->
+    <section class="section" id="section-agenda" aria-labelledby="agenda-title">
+      <div class="section-header">
+        <h3 id="agenda-title">Agenda general</h3>
+        <p>Filtra la línea de tiempo por tipo de actividad.</p>
+      </div>
+
+      <div class="filters" aria-label="Filtros por tipo de actividad">
+        <button class="chip chip-active" data-filter="all" type="button">Todo</button>
+        <button class="chip" data-filter="música" type="button">Música</button>
+        <button class="chip" data-filter="danza" type="button">Danza</button>
+        <button class="chip" data-filter="artes" type="button">Artes plásticas</button>
+        <button class="chip" data-filter="juegos" type="button">Juegos de mesa</button>
+        <button class="chip" data-filter="fundaciones" type="button">Fundaciones</button>
+        <button class="chip" data-filter="general" type="button">General</button>
+      </div>
+
+      <div class="timeline" id="timeline-list" aria-live="polite">
+        <!-- Eventos generados por JS -->
+      </div>
+
+      <p class="mapa-note">
+        Los horarios son de referencia y pueden tener ligeras variaciones durante la jornada.
+      </p>
+    </section>
+
+
+    <!-- =======================================
+         MAPA + SALONES
+    ======================================== -->
+    <section class="section" id="section-salones" aria-labelledby="salones-title">
+      <div class="section-header">
+        <h3 id="salones-title">Salones y experiencias</h3>
+        <p>Ubícate en el mapa y elige un salón para ver su programación.</p>
+      </div>
+
+      <div class="mapa-wrapper">
+        <a href="mapa.jpeg" target="_blank">
+          <img src="mapa.jpeg" alt="Mapa de Musicala Fest" class="mapa-img">
+        </a>
+        <p class="mapa-note">
+          Mapa simplificado para mejor visualización en celular. Toca la imagen para verla en grande.
+        </p>
+      </div>
+
+      <div class="salon-grid" id="salon-grid">
+        <!-- Se llena con JS -->
+      </div>
+
+      <div class="salon-detail" id="salon-detail" aria-live="polite">
+        <div class="salon-detail-header">
+          <h4 id="salon-detail-name">Selecciona un salón</h4>
+          <p id="salon-detail-description">
+            Toca un salón en la parte superior para ver aquí sus horarios y actividades.
+          </p>
+          <p id="salon-detail-extra" class="salon-meta"></p>
+        </div>
+        <div id="salon-detail-schedule" class="salon-detail-schedule">
+          <!-- Cronograma generado por JS -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- =======================================
+         INFO ÚTIL
+    ======================================== -->
+    <section class="section section-soft" aria-labelledby="info-title">
+      <div class="section-header">
+        <h3 id="info-title">Información para participantes y familias</h3>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h4>Puntos clave</h4>
+          <ul>
+            <li>Llega 10–15 minutos antes de tu primer taller.</li>
+            <li>Cuidemos juntos instrumentos y materiales.</li>
+            <li>Sigue las indicaciones del equipo Musicala.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h4>Recomendaciones</h4>
+          <ul>
+            <li>Usa ropa cómoda.</li>
+            <li>Hidrátate durante el recorrido.</li>
+            <li>Si tienes dudas, acércate a recepción.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h4>Aliados invitados</h4>
+          <p>Fundaciones como Gatitus tendrá actividades especiales y tendrán su stand para mostrarnos su trabajo.</p>
+        </article>
+
+        <!-- NUEVO: Baños y servicios -->
+        <article class="info-card">
+          <h4>Baños y servicios</h4>
+          <p>
+            Contamos con <strong>tres baños disponibles</strong> para todos nuestros invitados:
+            uno en el <strong>primer piso</strong> y dos en el <strong>segundo piso</strong>.  
+            Puedes usarlos en cualquier momento durante tu recorrido por el Musicala Fest.
+          </p>
+        </article>
+
+        <!-- NUEVO: Rotación en MiniAuditorio / Salón 3 -->
+        <article class="info-card">
+          <h4>MiniAuditorio · Salón 3</h4>
+          <p>
+            Para que todas las familias puedan disfrutar las muestras en el
+            <strong>Salón 3 – MiniAuditorio</strong>, te pedimos que, una vez finalicen
+            las presentaciones del estudiante que acompañas, permitas el ingreso de los
+            siguientes asistentes.  
+            <br><br>
+            Después de tu bloque, te invitamos a seguir recorriendo los demás salones,
+            talleres, juegos de mesa y zonas de fundaciones que hemos preparado para ti.
+          </p>
+        </article>
+
+        <!-- NUEVO: PQRS -->
+        <article class="info-card">
+          <h4>Queremos escucharte</h4>
+          <p>
+            Cuando finalice tu experiencia en el Musicala Fest, nos encantaría conocer
+            cómo te sentiste y qué podríamos mejorar para seguir creciendo juntos.  
+            Si deseas dejarnos un mensaje, sugerencia o reconocimiento, puedes hacerlo en
+            nuestro formulario de <strong>PQRS</strong>:
+            <br><br>
+            👉 <a href="https://musicala.github.io/pqrs/" target="_blank">https://musicala.github.io/pqrs/</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Musicala Fest 2025 · Escuela de artes Musicala</p>
+    <p><a href="#hero-title">Volver al inicio</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- BOTÓN FLOTANTE PQRS -->
+  <a
+    href="https://musicala.github.io/pqrs/"
+    target="_blank"
+    class="floating-pqrs-btn"
+    aria-label="Dejar una PQRS sobre tu experiencia en el Musicala Fest"
+  >
+    ✉️ PQRS
+  </a>
+</body>
+</html>
