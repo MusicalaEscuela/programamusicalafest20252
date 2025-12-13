@@ -303,7 +303,7 @@ const salones = [
         time: "09:30",
         title: "Bloque A · Apertura",
         detail:
-          "Juan Martín Patiño; Alana Teuta Munevar; Fátima Celeste Torres; Juan Martín Patiño; Juan Martín Patiño."
+          "Ana Sofía Pulido Buitrago; Juan Martín Patiño; Alana Teuta Munevar; Fátima Celeste Torres"
       },
       {
         time: "10:30",
@@ -554,3 +554,4 @@ function setupHeroButtons() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
